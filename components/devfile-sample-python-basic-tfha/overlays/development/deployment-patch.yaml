@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tfha
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-python-basic-tfha@sha256:120e143674b33a374918896f91190ae5810fcee24aec551e43947ec3e76306bc
+        name: my-python
+        resources: {}
+status: {}
